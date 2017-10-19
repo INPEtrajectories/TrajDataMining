@@ -1,7 +1,9 @@
 #' Douglas Peucker
 #'
 #' Method that reduces a trajectory spatially
-#'
+#' 
+#' @import geosphere
+#' 
 #'@param A1 track object trajectories
 #'
 #'@param dist distance

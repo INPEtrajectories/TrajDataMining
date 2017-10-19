@@ -2,6 +2,8 @@
 #'
 #' Method that reduces trajectories spatiotemporally
 #'
+#'@import geosphere
+#'
 #'@param A1 track object
 #'
 #'@param dist distance of object
