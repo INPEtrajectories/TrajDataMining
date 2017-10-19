@@ -43,7 +43,7 @@ library(TrajDataMining)
 
 ```{r, fig.height=6,fig.width=6,fig.align='center'}
 
-plot(A1,col="red",lwd=3)
+# plot(A1,col="red",lwd=3)
 ```
 
 
@@ -54,9 +54,9 @@ plot(A1,col="red",lwd=3)
 ```{r, fig.height=6,fig.width=6,fig.align='center'}
 
 # get the maximum distance
-max <- max(A1@connections$distance)
+# max <- max(A1@connections$distance)
 
-plot(douglasPeucker(A1,max),col="red",lwd=3)
+# plot(douglasPeucker(A1,max),col="red",lwd=3)
 ```
 
 
@@ -67,7 +67,7 @@ plot(douglasPeucker(A1,max),col="red",lwd=3)
 ```{r, fig.height=6,fig.width=6,fig.align='center'}
 
 # get the maximum distance
-plot(speedFilter(A1,0.01),col="red",lwd=3)
+# plot(speedFilter(A1,0.01),col="red",lwd=3)
 ```
 
 ## ow Meratnia By Collection
@@ -90,9 +90,9 @@ plot(speedFilter(A1,0.01),col="red",lwd=3)
 #### For to send this data for the database use the class DataSourceInfo.
 ```{r, fig.height=6,fig.width=6,fig.align='center'}
  
-  data <- FALSE
+  # data <- FALSE
   
-  partner(A1,A2,110792,2277,0,data)
+  # partner(A1,A2,110792,2277,0,data)
 
   
 
