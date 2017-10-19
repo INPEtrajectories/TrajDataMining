@@ -1,5 +1,7 @@
 # Trajectories Data Mining
 
+[![Build Status](https://travis-ci.org/OldLipe/TrajDataMining)]
+
 ## Package TrajDataMining
 
 - Package created by Diego Monteiro and analyzed and tested by Felipe Carvalho,Carlos Alberto and Karine Reis.
