@@ -1,0 +1,25 @@
+Package: TrajDataMining
+Type: Package
+Title: Trajectories data mining
+Version: 0.1.1
+Date: 2015-11-22
+Authors@R: c(person("Diego","Monteiro",role=c("aut","cre"),email="dvm1607@gmail.com"),
+  person("Karine", "Reis", role = "ctb"),
+  person("Carlos", "Alberto", role = "ctb"),
+  person("Felipe", "Carvalho", role = "ctb"))
+Description: The TrajDataMining contains a set of methods for trajectory data preparation, such as filtering, compressing and clustering, and for trajectory pattern discovery.
+License: MIT + file LICENSE
+LazyData: TRUE
+Encoding: UTF-8
+Depends: R (>= 3.0.0)
+Imports: sp,
+    trajectories,
+    rgdal,
+    xts,
+    rgeos,
+    spacetime
+RoxygenNote: 6.0.1
+Suggests: testthat,
+    knitr,
+    rmarkdown
+VignetteBuilder: knitr

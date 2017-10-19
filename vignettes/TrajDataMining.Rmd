@@ -1,0 +1,105 @@
+---
+title: "TrajDataMining"
+author: "Diego Monteiro"
+date: "`r Sys.Date()`"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{TrajDataMining}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+## TrajDataMining
+
+The TrajDataMining contains a set of methods for trajectory data preparation, such as
+filtering, compressing and clustering, and for trajectory pattern discovery. The meth-
+ods for data preparation are important to prepare trajectory data sets before the data
+mining phase. TrajDataMining contains the following methods:
+
+- A speed filter that filters out trajectory observations whose speeds are above
+a user-defined maximum velocity ( ETIENNE , 2011).
+
+- Two compression algorithms: (1) Douglas-Peucker which reduces trajectories
+by preserving spatial precisions ( DOUGLAS; PEUCKER , 1973), and (2) Open-window Meratnia-By which reduces trajectories by preserving spatiotempo-
+ral precisions ( MERATNIA; BY , 2004).
+
+- Two algorithms to discover when objects stop and move, CB-SMoT ( PALMA
+et al. , 2008) and DB-SMoT ( ROCHA et al. , 2010), which can be used to semanti-
+cally enrich the trajectory data.
+
+- A method, named Partner, that identifies objects that are moving together.
+We propose this method to recognize trajectories that stay together, based on
+trajectory distance time series analysis.
+
+## Example data gives
+```{r}
+library(TrajDataMining)
+
+```
+
+## Plot of A1 data example
+
+### A1 track its a trajectory of sea elephant
+
+```{r, fig.height=6,fig.width=6,fig.align='center'}
+
+plot(A1,col="red",lwd=3)
+```
+
+
+## Douglas Peucker Method
+
+### Method that reduces a trajectory spatially
+
+```{r, fig.height=6,fig.width=6,fig.align='center'}
+
+# get the maximum distance
+max <- max(A1@connections$distance)
+
+plot(douglasPeucker(A1,max),col="red",lwd=3)
+```
+
+
+## Speed Filter
+
+### Method removes regions where speed was higher than the defined parameter
+
+```{r, fig.height=6,fig.width=6,fig.align='center'}
+
+# get the maximum distance
+plot(speedFilter(A1,0.01),col="red",lwd=3)
+```
+
+## ow Meratnia By Collection
+
+### Method that reduces a set of trajectories spatiotemporally
+
+
+```{r}
+
+# plot(owMeratniaByCollection(tracksCollection,13804.84 ,
+# 0.03182201))
+
+
+```
+
+## Partner
+
+### Method to identify if two trajectories are partners
+
+#### For to send this data for the database use the class DataSourceInfo.
+```{r, fig.height=6,fig.width=6,fig.align='center'}
+ 
+  data <- FALSE
+  
+  partner(A1,A2,110792,2277,0,data)
+
+  
+
+```
+
+
+
+
+
+
