@@ -1,7 +1,4 @@
 # Trajectories Data Mining
-============
-
-[![Build Status](https://travis-ci.org/OldLipe/TrajDataMining.svg?branch=master)](https://travis-ci.org/OldLipe/TrajDataMining)
 
 ## Package TrajDataMining
 
