@@ -4,7 +4,7 @@ dist: trusty
 cache: packages
 
 addons:
-	apt:
-		packages:
-			- libgdal-dev
-			- libproj-dev
+  apt:
+    packages:
+      - libgdal-dev
+      -libproj-dev
