@@ -1,6 +1,6 @@
 Package: TrajDataMining
 Type: Package
-Title: Trajectories data mining
+Title: Trajectories Data Mining
 Version: 0.1.1
 Date: 2015-11-22
 Authors@R: c(person("Diego","Monteiro",role=c("aut","cre"),email="dvm1607@gmail.com"),
@@ -17,7 +17,8 @@ Imports: sp,
     rgdal,
     xts,
     rgeos,
-    spacetime
+    spacetime,
+    RPostgreSQL
 RoxygenNote: 6.0.1
 Suggests: testthat,
     knitr,
