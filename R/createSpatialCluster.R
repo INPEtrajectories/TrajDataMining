@@ -1,14 +1,4 @@
-#' Create Spatial Cluster
-#'
-#' Method for create a spatial cluster
-#'
-#' @param track Track object
-#'
-#' @param clusterlist list of cluster positions create spatial objects
-#'
-#' @return Polygons
-#'
-#' @export
+
 setGeneric(
   name = "createSpatialCluster",
   def = function(A3, clusterlist)
@@ -17,8 +7,19 @@ setGeneric(
     standardGeneric("createSpatialCluster")
   }
 )
-
-###given a Track and a list of cluster positions create spatial objects
+#' Create Spatial Cluster
+#'
+#' Method for create a spatial cluster
+#'
+#' @param A3 Track object
+#'
+#' @param clusterlist numeric list of cluster positions create spatial objects
+#'
+#' @return Polygons
+#'
+#'
+#' @export
+# given a Track and a list of cluster positions create spatial objects
 setMethod(
   f = "createSpatialCluster",
   signature = c("Track","numeric"),

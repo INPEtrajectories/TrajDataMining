@@ -218,7 +218,7 @@ setMethod(
             iniFinList <- c(Begin=as.character(initialTime),End=as.character(finalTime),Id1=id1,Id2=id2)
             timefromstart <- difftime(timeSeries@conns1@data$time[n],timeSeries@conns1@data$time[firstContant],units="secs")
             if(timefromstart > mintime){
-              if(.RightSize(timeSeries,as.character(initialTime),as.character(finalTime),3)){
+              if(RightSize(timeSeries,as.character(initialTime),as.character(finalTime),3)){
                 allPartner[nrow(allPartner)+1,]<-c(iniFinList)
               }
             }
@@ -243,7 +243,7 @@ setMethod(
           iniFinList <- c(Begin=as.character(initialTime),End=as.character(finalTime),Id1=id1,Id2=id2)
           timefromstart <- difftime(timeSeries@conns1@data$time[n],timeSeries@conns1@data$time[firstContant],units="secs")
           if(timefromstart > mintime){
-            if(.RightSize(timeSeries,as.character(initialTime),as.character(finalTime),3)){
+            if(RightSize(timeSeries,as.character(initialTime),as.character(finalTime),3)){
               allPartner[nrow(allPartner)+1,]<-c(iniFinList)
             }
           }
@@ -255,15 +255,13 @@ setMethod(
     }
     
     sendPartnerPairsToDB(allPartner,datasource,tablename)
-    if(id2=="49101" && id1 =="48651"){
-      assign("truck1", A1, envir = .GlobalEnv)
-      assign("truck2", A2, envir = .GlobalEnv)
-      assign("problemgoalong", allPartner, envir = .GlobalEnv)
-      
-      
-      
-      
-    }
+    
+    # if(id2=="49101" && id1 =="48651"){
+    #  assign("truck1", A1, envir = .GlobalEnv)
+    #  assign("truck2", A2, envir = .GlobalEnv)
+    #  assign("problemgoalong", allPartner, envir = .GlobalEnv)
+    #}
+    
     return (allPartner)
   }
   
@@ -358,7 +356,6 @@ setMethod(
         
         if(n==(length(timeSeries@conns1)-1) && inCounter==TRUE){
           finalTime = timeSeries@conns1@data$time[n]
-          #iniFinList <- c(Begin=initialTime,End=finalTime,Id1=id1,Id2=id2)
           if(as.numeric(id1)>as.numeric(id2)){
             tempvar <- id1
             id1<-id2

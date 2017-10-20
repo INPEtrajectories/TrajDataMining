@@ -1,8 +1,8 @@
 #'Conversão de index pra track
 #'
-#'@param Track Track object
+#'@param A1 Track object
 #' 
-#'@param list an index list
+#'@param index an index list
 #'
 #'@return track object
 setGeneric(

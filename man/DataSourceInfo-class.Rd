@@ -13,8 +13,24 @@ Class to connect in a database
 \describe{
 \item{\code{user}}{user of database}
 
+\item{\code{title}}{Title of database}
+
+\item{\code{accessDriver}}{the database access driver}
+
+\item{\code{host}}{host of the database (e.g. local host)}
+
+\item{\code{port}}{port the database (e.g. 5432)}
+
+\item{\code{timeout}}{timeout time of connection}
+
 \item{\code{password}}{password of database}
 
 \item{\code{db}}{database name}
+
+\item{\code{encoding}}{encoding of database (e.g.CP1252 )}
+
+\item{\code{dbtype}}{the type of the database (e.g. POSTGIS)}
+
+\item{\code{path}}{path of the database}
 }}
 

@@ -1,22 +1,4 @@
-#' Douglas Peucker
-#'
-#' Method that reduces a trajectory spatially
-#' 
-#' @import geosphere
-#' 
-#'@param A1 track object trajectories
-#'
-#'@param dist distance
-#'
-#'@return track reduced  trajectory spatially
-#'
-#'@examples
-#'
-#' douglasPeucker(A1,300)
-#'
-#'
-#'@export
-#'
+
 setGeneric(
   name = "douglasPeucker",
   def = function(A1, dist)
@@ -34,7 +16,24 @@ setGeneric(
     standardGeneric("douglasPeuckerRP")
   }
 )
-
+#' Douglas Peucker
+#'
+#' Method that reduces a trajectory spatially
+#' 
+#'@import geosphere
+#' 
+#'@param A1 track object trajectories
+#'
+#'@param dist distance
+#'
+#'@return track reduced  trajectory spatially
+#'
+#'@docType methods
+#' 
+#'@rdname douglasPeucker
+#'
+#'@export
+#'
 setMethod(
   f = "douglasPeucker",
   signature = c("Track", "numeric"),
@@ -84,7 +83,19 @@ setMethod(
     # return(pointIndexsToKeep)
   }
 )
-
+#' Douglas Peucker RP
+#' 
+#' @docType methods
+#' 
+#' @rdname douglasPeuckerRP
+#'
+#' @param A1 track object
+#' 
+#' @param firstp first point
+#' 
+#' @param lastp last point
+#' 
+#' @param dist distance of object
 setMethod(
   f = "douglasPeuckerRP",
   signature = c("Track","numeric","numeric","numeric"),

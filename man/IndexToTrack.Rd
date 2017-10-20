@@ -7,9 +7,9 @@
 IndexToTrack(A1, index)
 }
 \arguments{
-\item{Track}{Track object}
+\item{A1}{Track object}
 
-\item{list}{an index list}
+\item{index}{an index list}
 }
 \value{
 track object

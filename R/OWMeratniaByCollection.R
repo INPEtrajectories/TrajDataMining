@@ -32,7 +32,7 @@ setMethod(
       print("Tracks")
       print(n)
       for (m in 1:length(A1@tracksCollection[[n]]@tracks)){
-        compressed[m] <- owMeratniaBy(A1@tracksCollection[[n]]@tracks[[m]], dist, speed)##}
+        compressed[m] <- owMeratniaBy(A1@tracksCollection[[n]]@tracks[[m]], dist, speed)
      }
       PartnerList <- c(PartnerList,Tracks(compressed))
       compressed <- NULL

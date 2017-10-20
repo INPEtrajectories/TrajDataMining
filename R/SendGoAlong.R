@@ -65,7 +65,7 @@ setMethod(
   signature = c("list","PostgreSQLConnection","character"),
   definition = function(dataframe,dataSourceInfo,tablename)
   {
-    require("RPostgreSQL")
+    
 
 
     partnerframe <- data.frame(dataframe)
@@ -90,6 +90,6 @@ dbGetQuery(con, sql_command)
 dbWriteTable(con, tablename,
 value = partnerframe, append = TRUE, row.names = FALSE)
 
-##dbDisconnect(con)
+
   }
 )
