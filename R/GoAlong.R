@@ -15,6 +15,8 @@
 #' @param datasource object class DataSourceInfo
 #'
 #' @param tablename The table name
+#' 
+#' @rdname partner
 #'
 #' @return list with begin time and end time of two  objects partner
 #' 
@@ -27,7 +29,7 @@ setGeneric(
     standardGeneric("partner")
   }
 )
-
+#'@rdname partner
 setMethod(
   f = "partner",
   signature = c("Track","Track","numeric","numeric","numeric","DataSourceInfo","character"),
@@ -135,10 +137,27 @@ setMethod(
     sendPartnerPairsToDB(allPartner,datasource,tablename)
     return (allPartner)
   }
-  
-  
-  
+ 
 )
+#' @param A1 Track object
+#'
+#' @param A2 Track object
+#'
+#' @param dist distance of object
+#'
+#' @param maxtime the maximum time
+#'
+#' @param mintime the minimum time
+#'
+#' @param datasource object class PostgreSQLConnection
+#'
+#' @param tablename The table name
+#' 
+#' @rdname partner
+#'
+#' @return list with begin time and end time of two  objects partner
+#' 
+#'@export
 
 setMethod(
   f = "partner",
@@ -264,10 +283,27 @@ setMethod(
     
     return (allPartner)
   }
-  
-  
-  
-)
+ )
+#' @param A1 Track object
+#'
+#' @param A2 Track object
+#'
+#' @param dist distance of object
+#'
+#' @param maxtime the maximum time
+#'
+#' @param mintime the minimum time
+#'
+#' @param datasource object class logical
+#'
+#' @param tablename missing param
+#' 
+#' @rdname partner
+#'
+#' @return list with begin time and end time of two  objects partner
+#' 
+#'@export
+
 
 setMethod(
   f = "partner",
@@ -375,10 +411,27 @@ setMethod(
     # sendPartnerPairsToDB(allPartner,datasource,"trucks_partners50m_15min_p2")
     return (allPartner)
   }
-  
-  
-  
+ 
 )
+#' @param A1 TracksCollection object
+#'
+#' @param A2 missing param
+#'
+#' @param dist distance of object
+#'
+#' @param maxtime the maximum time
+#'
+#' @param mintime the minimum time
+#'
+#' @param datasource missing param
+#'
+#' @param tablename missing param
+#' 
+#' @rdname partner
+#'
+#' @return list with begin time and end time of two  objects partner
+#' 
+#'@export
 
 setMethod(
   f = "partner",
@@ -427,6 +480,25 @@ setMethod(
   
   
 )
+#' @param A1 TracksCollection object
+#'
+#' @param A2 TracksCollection object
+#'
+#' @param dist distance of object
+#'
+#' @param maxtime the maximum time
+#'
+#' @param mintime the minimum time
+#'
+#' @param datasource missing param
+#'
+#' @param tablename missing param
+#' 
+#' @rdname partner
+#'
+#' @return list with begin time and end time of two  objects partner
+#' 
+#'@export
 
 setMethod(
   f = "partner",
@@ -475,6 +547,25 @@ setMethod(
   
   
 )
+#' @param A1 TracksCollection object
+#'
+#' @param A2 Track object
+#'
+#' @param dist distance of object
+#'
+#' @param maxtime the maximum time
+#'
+#' @param mintime the minimum time
+#'
+#' @param datasource object class PostgreSQLConnection
+#'
+#' @param tablename The table name
+#' 
+#' @rdname partner
+#'
+#' @return list with begin time and end time of two  objects partner
+#' 
+#'@export
 
 setMethod(
   f = "partner",

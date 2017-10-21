@@ -9,6 +9,8 @@
 #' @param speed Speed of object
 #'
 #' @return Trajectory spatiotemporally reduced
+#' 
+#'@rdname owMeratniaByCollection
 #'
 #' @export
 setGeneric(
@@ -19,7 +21,7 @@ setGeneric(
     standardGeneric("owMeratniaByCollection")
   }
 )
-
+#'@rdname owMeratniaByCollection
 setMethod(
   f = "owMeratniaByCollection",
   signature = c("TracksCollection", "numeric", "numeric"),

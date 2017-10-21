@@ -9,6 +9,8 @@
 #' @param tolerance is the maximum change parameter
 #'
 #' @return returns regions where direction changed more than the defined parameter
+#' 
+#' @rdname directionCluster
 #'
 #' @export
 setGeneric(
@@ -19,7 +21,7 @@ setGeneric(
     standardGeneric("directionCluster")
   }
 )
-
+#' @rdname directionCluster
 setMethod(
   f = "directionCluster",
   signature = c("Track","numeric", "numeric", "numeric"),

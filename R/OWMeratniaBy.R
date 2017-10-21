@@ -12,6 +12,8 @@
 #'
 #'@return reduces trajectories spatiotemporally
 #'
+#'@rdname owMeratniaBy
+#'
 #'@export
 
 setGeneric(
@@ -22,7 +24,7 @@ setGeneric(
     standardGeneric("owMeratniaBy")
   }
 )
-
+#'@rdname owMeratniaBy
 setMethod(
   f = "owMeratniaBy",
   signature = c("Track", "numeric", "numeric"),

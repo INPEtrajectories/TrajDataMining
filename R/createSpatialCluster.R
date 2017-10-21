@@ -1,12 +1,3 @@
-
-setGeneric(
-  name = "createSpatialCluster",
-  def = function(A3, clusterlist)
-  {
-    
-    standardGeneric("createSpatialCluster")
-  }
-)
 #' Create Spatial Cluster
 #'
 #' Method for create a spatial cluster
@@ -17,9 +8,19 @@ setGeneric(
 #'
 #' @return Polygons
 #'
+#' @rdname  createSpatialCluster
 #'
 #' @export
 # given a Track and a list of cluster positions create spatial objects
+setGeneric(
+  name = "createSpatialCluster",
+  def = function(A3, clusterlist)
+  {
+    
+    standardGeneric("createSpatialCluster")
+  }
+)
+#' @rdname  createSpatialCluster
 setMethod(
   f = "createSpatialCluster",
   signature = c("Track","numeric"),
