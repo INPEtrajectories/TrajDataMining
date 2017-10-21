@@ -6,7 +6,7 @@
 
 - Package created by Diego Monteiro and oriented by Karine Reis, analyzed and tested by Felipe Carvalho and Carlos Alberto.
 
--The main goal is to send this package to CRAN.
+- The main goal is to send this package to CRAN.
 
 
 
