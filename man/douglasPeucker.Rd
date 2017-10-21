@@ -22,10 +22,6 @@ douglasPeucker(A1, dist)
 \item{firstp}{first point}
 
 \item{lastp}{last point}
-
-\item{A1}{Track object}
-
-\item{dist}{distance}
 }
 \value{
 track reduced  trajectory spatially

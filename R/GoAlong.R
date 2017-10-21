@@ -29,6 +29,10 @@ setGeneric(
     standardGeneric("partner")
   }
 )
+#' Partner
+#' 
+#' DataSourceInfo connection
+#'
 #'@rdname partner
 setMethod(
   f = "partner",
@@ -139,19 +143,10 @@ setMethod(
   }
  
 )
-#' @param A1 Track object
-#'
-#' @param A2 Track object
-#'
-#' @param dist distance of object
-#'
-#' @param maxtime the maximum time
-#'
-#' @param mintime the minimum time
-#'
-#' @param datasource object class PostgreSQLConnection
-#'
-#' @param tablename The table name
+
+#' Partner
+#' 
+#' Postgresql connection
 #' 
 #' @rdname partner
 #'
@@ -284,27 +279,15 @@ setMethod(
     return (allPartner)
   }
  )
-#' @param A1 Track object
-#'
-#' @param A2 Track object
-#'
-#' @param dist distance of object
-#'
-#' @param maxtime the maximum time
-#'
-#' @param mintime the minimum time
-#'
-#' @param datasource object class logical
-#'
-#' @param tablename missing param
+#' Partner
+#' 
+#' Logical param in database connection
 #' 
 #' @rdname partner
-#'
+#' 
 #' @return list with begin time and end time of two  objects partner
 #' 
 #'@export
-
-
 setMethod(
   f = "partner",
   signature = c("Track","Track","numeric","numeric","numeric","logical","missing"),
@@ -413,19 +396,9 @@ setMethod(
   }
  
 )
-#' @param A1 TracksCollection object
-#'
-#' @param A2 missing param
-#'
-#' @param dist distance of object
-#'
-#' @param maxtime the maximum time
-#'
-#' @param mintime the minimum time
-#'
-#' @param datasource missing param
-#'
-#' @param tablename missing param
+#' Partner
+#' 
+#' Missing database connection
 #' 
 #' @rdname partner
 #'
@@ -480,19 +453,9 @@ setMethod(
   
   
 )
-#' @param A1 TracksCollection object
-#'
-#' @param A2 TracksCollection object
-#'
-#' @param dist distance of object
-#'
-#' @param maxtime the maximum time
-#'
-#' @param mintime the minimum time
-#'
-#' @param datasource missing param
-#'
-#' @param tablename missing param
+#' Partner
+#' 
+#' Missing database connection and TrackCollection objects
 #' 
 #' @rdname partner
 #'
@@ -547,19 +510,9 @@ setMethod(
   
   
 )
-#' @param A1 TracksCollection object
-#'
-#' @param A2 Track object
-#'
-#' @param dist distance of object
-#'
-#' @param maxtime the maximum time
-#'
-#' @param mintime the minimum time
-#'
-#' @param datasource object class PostgreSQLConnection
-#'
-#' @param tablename The table name
+#' Partner
+#' 
+#' Missing database connection 
 #' 
 #' @rdname partner
 #'

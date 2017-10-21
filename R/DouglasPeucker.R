@@ -82,13 +82,9 @@ setMethod(
 )
 #' Douglas Peucker RP
 #'
-#'@param A1 Track object
-#'
 #'@param firstp first point
 #'
 #'@param lastp last point
-#'
-#'@param dist distance 
 #'
 #' @rdname douglasPeucker
 setMethod(

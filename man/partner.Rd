@@ -50,76 +50,6 @@ partner(A1, A2, dist, maxtime, mintime, datasource, tablename)
 \item{datasource}{object class DataSourceInfo}
 
 \item{tablename}{The table name}
-
-\item{A1}{Track object}
-
-\item{A2}{Track object}
-
-\item{dist}{distance of object}
-
-\item{maxtime}{the maximum time}
-
-\item{mintime}{the minimum time}
-
-\item{datasource}{object class PostgreSQLConnection}
-
-\item{tablename}{The table name}
-
-\item{A1}{Track object}
-
-\item{A2}{Track object}
-
-\item{dist}{distance of object}
-
-\item{maxtime}{the maximum time}
-
-\item{mintime}{the minimum time}
-
-\item{datasource}{object class logical}
-
-\item{tablename}{missing param}
-
-\item{A1}{TracksCollection object}
-
-\item{A2}{missing param}
-
-\item{dist}{distance of object}
-
-\item{maxtime}{the maximum time}
-
-\item{mintime}{the minimum time}
-
-\item{datasource}{missing param}
-
-\item{tablename}{missing param}
-
-\item{A1}{TracksCollection object}
-
-\item{A2}{TracksCollection object}
-
-\item{dist}{distance of object}
-
-\item{maxtime}{the maximum time}
-
-\item{mintime}{the minimum time}
-
-\item{datasource}{missing param}
-
-\item{tablename}{missing param}
-
-\item{A1}{TracksCollection object}
-
-\item{A2}{Track object}
-
-\item{dist}{distance of object}
-
-\item{maxtime}{the maximum time}
-
-\item{mintime}{the minimum time}
-
-\item{datasource}{object class PostgreSQLConnection}
-
-\item{tablename}{The table name}
 }
 \value{
 list with begin time and end time of two  objects partner
@@ -136,4 +66,16 @@ list with begin time and end time of two  objects partner
 }
 \description{
 Method to identify if two trajectories are partners
+
+DataSourceInfo connection
+
+Postgresql connection
+
+Logical param in database connection
+
+Missing database connection
+
+Missing database connection and TrackCollection objects
+
+Missing database connection
 }

@@ -15,7 +15,7 @@ setGeneric(
     standardGeneric("speedFilter")
   }
 )
-
+#'@rdname speedFilter
 setMethod(
   f = "speedFilter",
   signature = c("Track", "numeric"),
