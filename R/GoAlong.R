@@ -149,8 +149,6 @@ setMethod(
 #' Postgresql connection
 #' 
 #' @rdname partner
-#'
-#' @return list with begin time and end time of two  objects partner
 #' 
 #'@export
 
@@ -285,8 +283,6 @@ setMethod(
 #' 
 #' @rdname partner
 #' 
-#' @return list with begin time and end time of two  objects partner
-#' 
 #'@export
 setMethod(
   f = "partner",
@@ -401,8 +397,6 @@ setMethod(
 #' Missing database connection
 #' 
 #' @rdname partner
-#'
-#' @return list with begin time and end time of two  objects partner
 #' 
 #'@export
 
@@ -458,8 +452,6 @@ setMethod(
 #' Missing database connection and TrackCollection objects
 #' 
 #' @rdname partner
-#'
-#' @return list with begin time and end time of two  objects partner
 #' 
 #'@export
 
@@ -516,8 +508,6 @@ setMethod(
 #' 
 #' @rdname partner
 #'
-#' @return list with begin time and end time of two  objects partner
-#' 
 #'@export
 
 setMethod(

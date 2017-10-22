@@ -53,16 +53,6 @@ partner(A1, A2, dist, maxtime, mintime, datasource, tablename)
 }
 \value{
 list with begin time and end time of two  objects partner
-
-list with begin time and end time of two  objects partner
-
-list with begin time and end time of two  objects partner
-
-list with begin time and end time of two  objects partner
-
-list with begin time and end time of two  objects partner
-
-list with begin time and end time of two  objects partner
 }
 \description{
 Method to identify if two trajectories are partners

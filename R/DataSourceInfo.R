@@ -2,6 +2,8 @@
 #' 
 #' Class to connect in a database
 #' 
+#'@import methods
+#' 
 #'@slot user user of database
 #'
 #'@slot title Title of database
