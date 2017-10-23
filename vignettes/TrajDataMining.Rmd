@@ -35,6 +35,7 @@ trajectory distance time series analysis.
 ```{r}
 library(TrajDataMining)
 library(ggplot2)
+library(grid)
 
 ```
 
@@ -42,11 +43,11 @@ library(ggplot2)
 
 ### A1 track its a trajectory of sea elephant
 
-```{r, fig.height=6,fig.width=6,fig.align='center'}
+```{r ,fig.height=4,fig.width=4,fig.align='center'}
 
   df <- data.frame(x=A1@sp@coords[,1],y=A1@sp@coords[,2])
 
-  plot(df$x,df$y,col="red",lwd=3)
+  ggplot(df,aes(x=df$x,y=df$y))+geom_path(aes(group = 1), arrow = arrow(),color='blue')+ggtitle("elephant sea Trajectory")+xlab("X")+ ylab("Y")+theme_classic()
 ```
 
 
@@ -54,7 +55,7 @@ library(ggplot2)
 
 ### Method that reduces a trajectory spatially
 
-```{r, fig.height=6,fig.width=6,fig.align='center'}
+```{r, fig.height=4,fig.width=4,fig.align='center'}
 
 # get the maximum distance
  max <- max(A1@connections$distance)
@@ -62,7 +63,7 @@ library(ggplot2)
  douglasp <- douglasPeucker(A1,max)
  
  df <- data.frame(x=douglasp@sp@coords[,1],y=douglasp@sp@coords[,2])
- plot(df$x,df$y,col="red",lwd=3)
+ ggplot(df,aes(x=df$x,y=df$y))+geom_path(aes(group = 1), arrow = arrow(),color='blue')+ggtitle("Method Douglas Peucker")+xlab("X")+ ylab("Y")+theme_classic()
  
 ```
 
@@ -71,13 +72,13 @@ library(ggplot2)
 
 ### Method removes regions where speed was higher than the defined parameter
 
-```{r, fig.height=6,fig.width=6,fig.align='center'}
+```{r, fig.height=4,fig.width=4,fig.align='center'}
 
 # get the maximum distance
   sf <- speedFilter(A1,0.01)
   df <- data.frame(x=sf@sp@coords[,1],y=sf@sp@coords[,2])
 
-  plot(df$x,df$y,col="red",lwd=3)
+   ggplot(df,aes(x=df$x,y=df$y))+geom_path(aes(group = 1), arrow = arrow(),color='blue')+ggtitle("Method Speed Filter")+xlab("X")+ ylab("Y")+theme_classic()
 ```
 
 ## ow Meratnia By Collection
@@ -87,7 +88,7 @@ library(ggplot2)
 
 ```{r}
 
-  #plot(owMeratniaByCollection(tracksCollection,13804.84, 0.03182201))
+# plot(owMeratniaByCollection(tracksCollection,13804.84, 0.03182201))
 
 
 ```

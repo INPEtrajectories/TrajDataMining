@@ -8,7 +8,7 @@
 #'
 #' @param dataSourceInfo a object class dataSourceInfo
 #'
-#' @param tablename name of table
+#' @param tablename name of table 
 #'
 #' @return send the partners list for a database
 #'
