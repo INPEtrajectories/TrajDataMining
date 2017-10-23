@@ -20,7 +20,8 @@ Imports: sp,
     spacetime,
     RPostgreSQL,
     geosphere,
-    methods
+    methods,
+    ggplot2
 Suggests: testthat,
     knitr,
     rmarkdown
