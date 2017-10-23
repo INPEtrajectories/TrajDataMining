@@ -21,3 +21,6 @@ Polygons
 \description{
 Method for create a spatial cluster
 }
+\author{
+Diego Monteiro
+}

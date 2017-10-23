@@ -1,8 +1,6 @@
 library(TrajDataMining)
 context("Test of main methods")
 
-
-
 test_that("Test speed filter", {
   expect_lt(length(speedFilter(A1,0.01)),length(A1))
 })
@@ -23,10 +21,15 @@ test_that ("Test OwMeratnialBy",{
 })
 
 test_that ("Test speedCluster", {
-
-    expect_type(speedCluster(A1,1.408736,0.1,586),"list")
+  
+  expect_type(speedCluster(A1,1.408736,0.1,586),"list")
 })
 test_that("Test DirectionCluster",{
   expect_type(directionCluster(A1,0,0,359),"list")
   
 })
+
+test_that("Test partner",{
+  expect_type(partner(A1,A2,110792,2277,0,FALSE),"list")
+})
+

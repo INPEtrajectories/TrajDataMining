@@ -3,6 +3,8 @@
 #' Method for create a spatial cluster
 #'
 #' @param A3 Track object
+#' 
+#' @author Diego Monteiro
 #'
 #' @param clusterlist numeric list of cluster positions create spatial objects
 #'

@@ -21,7 +21,8 @@ Imports: sp,
     RPostgreSQL,
     geosphere,
     methods,
-    ggplot2
+    ggplot2,
+    grid
 Suggests: testthat,
     knitr,
     rmarkdown
