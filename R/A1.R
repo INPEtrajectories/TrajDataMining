@@ -1,6 +1,6 @@
 #' A trajectory of elephant sea
 #'
-#' A dataset containing the track object
+#' A dataset containing a track object
 #'
 #' @format A trajectory  with 2218 rows and 7 columns:
 #' \describe{

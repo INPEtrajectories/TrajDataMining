@@ -4,7 +4,7 @@
 #'
 #' @param A1 Track object
 #'
-#'@param speed is the maximum speed parameter
+#' @param speed is the maximum speed parameter
 #'
 #' @export
 #'

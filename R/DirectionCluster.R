@@ -1,5 +1,7 @@
 #' Direction Cluster
 #'
+#'that given a Track and maximum change parameter, returns regions where direction changed more than the defined parameter
+#'
 #' @param track Track object
 #'
 #' @param minT is the minimun period at the speed

@@ -36,6 +36,8 @@ trajectory distance time series analysis.
 library(TrajDataMining)
 library(ggplot2)
 library(grid)
+library(rgdal)
+library(mapview)
 
 ```
 
@@ -48,6 +50,7 @@ library(grid)
   df <- data.frame(x=A1@sp@coords[,1],y=A1@sp@coords[,2])
 
   ggplot(df,aes(x=df$x,y=df$y))+geom_path(aes(group = 1), arrow = arrow(),color='blue')+ggtitle("elephant sea Trajectory")+xlab("X")+ ylab("Y")+theme_classic()
+  
 ```
 
 

@@ -22,7 +22,8 @@ Imports: sp,
     geosphere,
     methods,
     ggplot2,
-    grid
+    grid,
+    mapview
 Suggests: testthat,
     knitr,
     rmarkdown

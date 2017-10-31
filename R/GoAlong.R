@@ -6,17 +6,21 @@
 #'
 #' @param A2 Track object
 #'
-#' @param dist distance of object
+#' @param dist Distance of object
 #'
-#' @param maxtime the maximum time
+#' @param maxtime Is the maximum time
 #'
-#' @param mintime the minimum time
+#' @param mintime Is the minimum time
 #'
-#' @param datasource object class DataSourceInfo
+#' @param datasource Is object class DataSourceInfo
 #'
 #' @param tablename The table name
 #' 
 #' @rdname partner
+#' 
+#' @examples 
+#' 
+#' partner(A1,A2,110792,2277,0,FALSE)
 #'
 #' @return list with begin time and end time of two  objects partner
 #' 
@@ -146,7 +150,7 @@ setMethod(
 
 #' Partner
 #' 
-#' Postgresql connection
+#' Use Postgresql connection
 #' 
 #' @rdname partner
 #' 
@@ -279,7 +283,7 @@ setMethod(
  )
 #' Partner
 #' 
-#' Logical param in database connection
+#' Use Logical param in database connection
 #' 
 #' @rdname partner
 #' 
@@ -394,7 +398,7 @@ setMethod(
 )
 #' Partner
 #' 
-#' Missing database connection
+#' Use Missing database connection
 #' 
 #' @rdname partner
 #' 
@@ -449,7 +453,7 @@ setMethod(
 )
 #' Partner
 #' 
-#' Missing database connection and TrackCollection objects
+#' Use Missing database connection and TrackCollection objects
 #' 
 #' @rdname partner
 #' 
@@ -504,7 +508,7 @@ setMethod(
 )
 #' Partner
 #' 
-#' Missing database connection 
+#' Use Missing database connection 
 #' 
 #' @rdname partner
 #'

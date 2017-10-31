@@ -18,6 +18,6 @@
 A2
 }
 \description{
-A dataset containing the track obejct
+A dataset containing a track obejct
 }
 \keyword{datasets}

@@ -25,6 +25,7 @@
 #'@slot dbtype the type of the database (e.g. POSTGIS)
 #'
 #'@slot path path of the database
+#'
 DataSourceInfo <- setClass(
   # Set the name for the class
   "DataSourceInfo",

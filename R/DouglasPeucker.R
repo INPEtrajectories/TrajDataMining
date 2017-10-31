@@ -21,7 +21,19 @@ setGeneric(
     standardGeneric("douglasPeucker")
   }
 )
-
+#' Douglas Peucker RP
+#'
+#' Method that reduces a trajectory spatially with first point and last point
+#'
+#' @param A1 track object
+#' 
+#' @param dist distance
+#'
+#' @param firstp given first point
+#'
+#' @param lastp given last point
+#'
+#' @export
 setGeneric(
   name = "douglasPeuckerRP",
   def = function(A1,firstp,lastp, dist)
@@ -80,13 +92,7 @@ setMethod(
     # return(pointIndexsToKeep)
   }
 )
-#' Douglas Peucker RP
-#'
-#'@param firstp first point
-#'
-#'@param lastp last point
-#'
-#' @rdname douglasPeucker
+#' @rdname douglasPeuckerRP
 setMethod(
   f = "douglasPeuckerRP",
   signature = c("Track","numeric","numeric","numeric"),

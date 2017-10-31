@@ -3,6 +3,7 @@
 export(createSpatialCluster)
 export(directionCluster)
 export(douglasPeucker)
+export(douglasPeuckerRP)
 export(owMeratniaBy)
 export(owMeratniaByCollection)
 export(partner)

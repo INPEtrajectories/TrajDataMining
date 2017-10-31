@@ -24,5 +24,5 @@ directionCluster(track, minD, minT, tolerance)
 returns regions where direction changed more than the defined parameter
 }
 \description{
-Direction Cluster
+that given a Track and maximum change parameter, returns regions where direction changed more than the defined parameter
 }

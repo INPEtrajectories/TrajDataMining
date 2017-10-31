@@ -4,30 +4,20 @@
 \name{douglasPeucker}
 \alias{douglasPeucker}
 \alias{douglasPeucker,Track,numeric-method}
-\alias{douglasPeuckerRP,Track,numeric,numeric,numeric-method}
 \title{Douglas Peucker}
 \usage{
 douglasPeucker(A1, dist)
 
 \S4method{douglasPeucker}{Track,numeric}(A1, dist)
-
-\S4method{douglasPeuckerRP}{Track,numeric,numeric,numeric}(A1, firstp, lastp,
-  dist)
 }
 \arguments{
 \item{A1}{track object trajectories}
 
 \item{dist}{distance}
-
-\item{firstp}{first point}
-
-\item{lastp}{last point}
 }
 \value{
 track reduced  trajectory spatially
 }
 \description{
 Method that reduces a trajectory spatially
-
-Douglas Peucker RP
 }

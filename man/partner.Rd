@@ -41,13 +41,13 @@ partner(A1, A2, dist, maxtime, mintime, datasource, tablename)
 
 \item{A2}{Track object}
 
-\item{dist}{distance of object}
+\item{dist}{Distance of object}
 
-\item{maxtime}{the maximum time}
+\item{maxtime}{Is the maximum time}
 
-\item{mintime}{the minimum time}
+\item{mintime}{Is the minimum time}
 
-\item{datasource}{object class DataSourceInfo}
+\item{datasource}{Is object class DataSourceInfo}
 
 \item{tablename}{The table name}
 }
@@ -59,13 +59,18 @@ Method to identify if two trajectories are partners
 
 DataSourceInfo connection
 
-Postgresql connection
+Use Postgresql connection
 
-Logical param in database connection
+Use Logical param in database connection
 
-Missing database connection
+Use Missing database connection
 
-Missing database connection and TrackCollection objects
+Use Missing database connection and TrackCollection objects
 
-Missing database connection
+Use Missing database connection
+}
+\examples{
+
+partner(A1,A2,110792,2277,0,FALSE)
+
 }
