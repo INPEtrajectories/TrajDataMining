@@ -37,8 +37,6 @@ library(TrajDataMining)
 library(ggplot2)
 library(grid)
 library(rgdal)
-library(mapview)
-
 ```
 
 ## Plot of A1 data example
