@@ -2,9 +2,9 @@
 #'
 #' Method to identify if two trajectories are partners
 #'
-#' @param A1 Track object
+#' @param A1 represents a single trajectory followed by a person, animal or object.
 #'
-#' @param A2 Track object
+#' @param A2 represents a single trajectory followed by a person, animal or object.
 #'
 #' @param dist Distance of object
 #'

@@ -4,9 +4,9 @@ Title: Trajectories Data Mining
 Version: 0.1.1
 Date: 2015-11-22
 Authors@R: c(person("Diego","Monteiro",role=c("aut","cre"),email="dvm1607@gmail.com"),
-  person("Karine", "Reis", role = "ctb"),
-  person("Carlos", "Alberto", role = "ctb"),
-  person("Felipe", "Carvalho", role = "ctb"))
+  person("Karine", "Reis", role = "ctb",email="karine.ferreira@inpe.br"),
+  person("Carlos", "Alberto", role = "ctb",email="carlos.noronha@inpe.br"),
+  person("Felipe", "Carvalho", role = "ctb",email="lipecaso@gmail.com"))
 Description: The TrajDataMining contains a set of methods for trajectory data preparation, such as filtering, compressing and clustering, and for trajectory pattern discovery.
 License: MIT + file LICENSE
 LazyData: TRUE
@@ -22,7 +22,8 @@ Imports: sp,
     geosphere,
     methods,
     ggplot2,
-    grid
+    grid,
+    magrittr  
 Suggests: testthat,
     knitr,
     rmarkdown

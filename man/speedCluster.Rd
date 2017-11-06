@@ -7,13 +7,13 @@
 speedCluster(track, avg, minT, sl)
 }
 \arguments{
-\item{track}{Track object}
+\item{track}{represents a single trajectory followed by a person, animal or object}
 
-\item{avg}{is the average speed}
+\item{avg}{is the average speed of track}
 
-\item{minT}{is the minimun period at the speed}
+\item{minT}{is the minimun period at the speed of track}
 
-\item{sl}{is the speed limit}
+\item{sl}{is the speed limit of track}
 }
 \value{
 returns regions where speed was lower than the defined parameter
@@ -23,4 +23,14 @@ Method for check the regions where speed was lower than the defined parameter
 }
 \details{
 Order the speed so it will start with the slowest speed cluster
+}
+\examples{
+avgSpeed <- mean(A1@connections$speed)
+
+minSpeed <- min(A1@connections$speed)
+
+speed <- speedCluster(A1,avgSpeed,minSpeed,586)
+}
+\author{
+Diego Monteiro
 }

@@ -37,9 +37,9 @@ partner(A1, A2, dist, maxtime, mintime, datasource, tablename)
   A2, dist, maxtime, mintime, datasource, tablename)
 }
 \arguments{
-\item{A1}{Track object}
+\item{A1}{represents a single trajectory followed by a person, animal or object.}
 
-\item{A2}{Track object}
+\item{A2}{represents a single trajectory followed by a person, animal or object.}
 
 \item{dist}{Distance of object}
 

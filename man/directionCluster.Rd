@@ -12,7 +12,7 @@ directionCluster(track, minD, minT, tolerance)
   tolerance)
 }
 \arguments{
-\item{track}{Track object}
+\item{track}{represents a single trajectory followed by a person, animal or object.}
 
 \item{minD}{is the minimun direction change}
 
@@ -24,5 +24,10 @@ directionCluster(track, minD, minT, tolerance)
 returns regions where direction changed more than the defined parameter
 }
 \description{
-that given a Track and maximum change parameter, returns regions where direction changed more than the defined parameter
+That given a Track and maximum change parameter, returns regions where direction changed more than the defined parameter
+}
+\examples{
+
+directionCluster(A1,0,0,359)
+
 }

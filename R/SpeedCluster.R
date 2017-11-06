@@ -1,16 +1,8 @@
 #' Speed Cluster
 #'
-#' Method for check the regions where speed was lower than the defined parameter
+#'Method for check the regions where speed was lower than the defined parameter
 #'
 #' Order the speed so it will start with the slowest speed cluster
-#'
-#'@param track Track object
-#'
-#'@param  avg is the average speed
-#'
-#'@param minT is the minimun period at the speed
-#'
-#'@param sl is the speed limit
 #'
 #'@import rgdal
 #'
@@ -20,8 +12,24 @@
 #'
 #'@import spacetime
 #'
+#'@param track represents a single trajectory followed by a person, animal or object
+#'
+#'@param  avg is the average speed of track
+#'
+#'@param minT is the minimun period at the speed of track
+#'
+#'@param sl is the speed limit of track
+#'
 #'@return returns regions where speed was lower than the defined parameter
 #'
+#'@author Diego Monteiro
+#'
+#'@examples
+#'avgSpeed <- mean(A1@connections$speed)
+#'
+#'minSpeed <- min(A1@connections$speed)
+#'
+#'speed <- speedCluster(A1,avgSpeed,minSpeed,586)
 #'@export
 #'
 setGeneric(
@@ -32,35 +40,10 @@ setGeneric(
     standardGeneric("speedCluster")
   }
 )
-#' Speed Cluster
-#'
-#' Method for check the regions where speed was lower than the defined parameter
-#'
-#' Order the speed so it will start with the slowest speed cluster
-#'
-#'@param track Track object
-#'
-#'@param  avg is the average speed
-#'
-#'@param minT is the minimun period at the speed
-#'
-#'@param sl is the speed limit
-#'
-#'@import rgdal
-#'
-#'@import trajectories
-#'
-#'@import sp
-#'
-#'@import spacetime
-#'
-#'@return returns regions where speed was lower than the defined parameter
-#'
-#'@export
-#'
+
 #'@rdname speedFilter
 #'
-# Creeates the speeed clusters Track is a given track, avg is the average speed,
+# Creates the speeed clusters Track is a given track, avg is the average speed,
 # minT is the minimum period at the speed. And sl is the speed limit
 setMethod(
   f = "speedCluster",

@@ -4,22 +4,39 @@
 \name{owMeratniaBy}
 \alias{owMeratniaBy}
 \alias{owMeratniaBy,Track,numeric,numeric-method}
-\title{Ow Meratinia By}
+\title{Ow Meratnia By}
 \usage{
 owMeratniaBy(A1, dist, speed)
 
 \S4method{owMeratniaBy}{Track,numeric,numeric}(A1, dist, speed)
 }
 \arguments{
-\item{A1}{track object}
+\item{A1}{represents a single trajectory followed by a person, animal or object.}
 
-\item{dist}{distance of object}
+\item{dist}{distance of track}
 
-\item{speed}{speed of object}
+\item{speed}{speed of track}
 }
 \value{
 reduces trajectories spatiotemporally
 }
 \description{
 Method that reduces trajectories spatiotemporally
+}
+\examples{
+
+library(ggplot2)
+
+speed <- max (A1@connections$speed)
+
+distance <- max (A1@connections$distance)
+
+ow <- owMeratniaBy(A1,distance,speed)
+
+df <- data.frame(x=ow@sp@coords[,1],y=ow@sp@coords[,2])
+
+ggplot(df,aes(x=df$x,y=df$y))+geom_path(aes(group = 1), arrow = arrow(),color='blue')
+}
+\author{
+Diego Monteiro
 }

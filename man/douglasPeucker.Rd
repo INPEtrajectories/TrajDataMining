@@ -11,13 +11,27 @@ douglasPeucker(A1, dist)
 \S4method{douglasPeucker}{Track,numeric}(A1, dist)
 }
 \arguments{
-\item{A1}{track object trajectories}
+\item{A1}{represents a single trajectory followed by a person, animal or object.}
 
 \item{dist}{distance}
 }
 \value{
-track reduced  trajectory spatially
+track reduced trajectory spatially
 }
 \description{
 Method that reduces a trajectory spatially
+}
+\examples{
+library(ggplot2)
+
+dist <- max(A1@connections$distance)
+
+douglasp <- douglasPeucker(A1,dist)
+
+df <- data.frame(x=douglasp@sp@coords[,1],y=douglasp@sp@coords[,2])
+ggplot(df,aes(x=df$x,y=df$y))+geom_path(aes(group = 1))
+
+}
+\author{
+Diego Monteiro
 }

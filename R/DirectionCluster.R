@@ -1,8 +1,8 @@
 #' Direction Cluster
 #'
-#'that given a Track and maximum change parameter, returns regions where direction changed more than the defined parameter
+#'That given a Track and maximum change parameter, returns regions where direction changed more than the defined parameter
 #'
-#' @param track Track object
+#' @param track represents a single trajectory followed by a person, animal or object.
 #'
 #' @param minT is the minimun period at the speed
 #'
@@ -12,7 +12,9 @@
 #'
 #' @return returns regions where direction changed more than the defined parameter
 #' 
-#' @rdname directionCluster
+#' @examples 
+#' 
+#'directionCluster(A1,0,0,359)
 #'
 #' @export
 setGeneric(

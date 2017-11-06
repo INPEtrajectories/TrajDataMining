@@ -1,19 +1,34 @@
-#' Ow Meratinia By
+#' Ow Meratnia By
 #'
 #' Method that reduces trajectories spatiotemporally
 #'
 #'@import geosphere
 #'
-#'@param A1 track object
+#'@param A1 represents a single trajectory followed by a person, animal or object.
 #'
-#'@param dist distance of object
+#'@param dist distance of track
 #'
-#'@param speed speed of object
+#'@param speed speed of track 
 #'
 #'@return reduces trajectories spatiotemporally
 #'
 #'@rdname owMeratniaBy
 #'
+#'@author Diego Monteiro
+#'
+#'@examples
+#'
+#'library(ggplot2)
+#'
+#'speed <- max (A1@connections$speed)
+#'
+#'distance <- max (A1@connections$distance)
+#'
+#'ow <- owMeratniaBy(A1,distance,speed)
+#'
+#'df <- data.frame(x=ow@sp@coords[,1],y=ow@sp@coords[,2])
+#'
+#'ggplot(df,aes(x=df$x,y=df$y))+geom_path(aes(group = 1), arrow = arrow(),color='blue')
 #'@export
 
 setGeneric(

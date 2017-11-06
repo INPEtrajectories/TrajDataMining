@@ -2,7 +2,7 @@
 #'
 #' Method that reduces a set of trajectories spatiotemporally
 #'
-#' @param A1 TracksCollection object
+#' @param A1 represents a collection of trajectories followed by different persons, animals or objects
 #'
 #' @param dist Distance of object
 #'
@@ -10,6 +10,18 @@
 #'
 #' @return Trajectory spatiotemporally reduced
 #' 
+#'@author Diego Monteiro
+#' 
+#' @examples 
+#' 
+#'library(magrittr)
+#'
+#'library(ggplot2)
+#'ow <-owMeratniaByCollection(tracksCollection,13804.84 ,0.03182201) %>% coordinates()
+#'
+#'df <- data.frame(x=ow[,1],y=ow[,2])
+#'
+#'ggplot(df,aes(x=x,y=y))+geom_path(aes(group = 1), arrow = arrow(),color='blue')
 #'@rdname owMeratniaByCollection
 #'
 #' @export

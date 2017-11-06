@@ -5,7 +5,7 @@
 \alias{speedCluster,Track,numeric,numeric,numeric-method}
 \alias{speedFilter}
 \alias{speedFilter,Track,numeric-method}
-\title{Speed Cluster}
+\title{Speed filter}
 \usage{
 \S4method{speedCluster}{Track,numeric,numeric,numeric}(track, avg, minT, sl)
 
@@ -14,26 +14,25 @@ speedFilter(A1, speed)
 \S4method{speedFilter}{Track,numeric}(A1, speed)
 }
 \arguments{
-\item{track}{Track object}
-
-\item{avg}{is the average speed}
-
-\item{minT}{is the minimun period at the speed}
-
-\item{sl}{is the speed limit}
-
 \item{A1}{Track object}
 
 \item{speed}{is the maximum speed parameter}
 }
-\value{
-returns regions where speed was lower than the defined parameter
-}
 \description{
-Method for check the regions where speed was lower than the defined parameter
-
 Method to return where speed was higher than the defined parameter
 }
-\details{
-Order the speed so it will start with the slowest speed cluster
+\examples{
+library(ggplot2)
+
+speed <- min(A1@connections$speed)
+
+sf <- speedFilter(A1,speed)
+
+df <- data.frame(x=sf@sp@coords[,1],y=sf@sp@coords[,2])
+
+ggplot(df,aes(x=df$x,y=df$y))+geom_path(aes(group = 1), arrow = arrow(),color='blue')
+
+}
+\author{
+Diego Monteiro
 }

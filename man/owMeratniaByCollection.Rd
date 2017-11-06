@@ -12,7 +12,7 @@ owMeratniaByCollection(A1, dist, speed)
   speed)
 }
 \arguments{
-\item{A1}{TracksCollection object}
+\item{A1}{represents a collection of trajectories followed by different persons, animals or objects}
 
 \item{dist}{Distance of object}
 
@@ -23,4 +23,18 @@ Trajectory spatiotemporally reduced
 }
 \description{
 Method that reduces a set of trajectories spatiotemporally
+}
+\examples{
+
+library(magrittr)
+
+library(ggplot2)
+ow <-owMeratniaByCollection(tracksCollection,13804.84 ,0.03182201) \%>\% coordinates()
+
+df <- data.frame(x=ow[,1],y=ow[,2])
+
+ggplot(df,aes(x=x,y=y))+geom_path(aes(group = 1), arrow = arrow(),color='blue')
+}
+\author{
+Diego Monteiro
 }

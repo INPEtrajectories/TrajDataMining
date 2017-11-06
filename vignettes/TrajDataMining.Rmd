@@ -36,7 +36,9 @@ trajectory distance time series analysis.
 library(TrajDataMining)
 library(ggplot2)
 library(grid)
-library(rgdal)
+library(sp)
+library(magrittr)
+suppressMessages(library(rgdal))
 ```
 
 ## Plot of A1 data example
@@ -79,19 +81,7 @@ library(rgdal)
   sf <- speedFilter(A1,0.01)
   df <- data.frame(x=sf@sp@coords[,1],y=sf@sp@coords[,2])
 
-   ggplot(df,aes(x=df$x,y=df$y))+geom_path(aes(group = 1), arrow = arrow(),color='blue')+ggtitle("Method Speed Filter")+xlab("X")+ ylab("Y")+theme_classic()
-```
-
-## ow Meratnia By Collection
-
-### Method that reduces a set of trajectories spatiotemporally
-
-
-```{r}
-
-# plot(owMeratniaByCollection(tracksCollection,13804.84, 0.03182201))
-
-
+ ggplot(df,aes(x=df$x,y=df$y))+geom_path(aes(group = 1), arrow = arrow(),color='blue')+ggtitle("Method Speed Filter")+xlab("X")+ ylab("Y")+theme_classic()
 ```
 
 ## Partner
