@@ -6,7 +6,7 @@
 #'
 #'@param A1 represents a single trajectory followed by a person, animal or object.
 #'
-#'@param dist distance of track
+#'@param dist distance time series 
 #'
 #'@param speed speed of track 
 #'

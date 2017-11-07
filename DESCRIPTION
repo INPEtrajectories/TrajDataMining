@@ -22,7 +22,6 @@ Imports: sp,
     geosphere,
     methods,
     ggplot2,
-    grid,
     magrittr  
 Suggests: testthat,
     knitr,

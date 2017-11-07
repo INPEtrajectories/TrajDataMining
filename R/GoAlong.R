@@ -1,28 +1,30 @@
 #' Partner
 #'
-#' Method to identify if two trajectories are partners
+#' Method to recognize trajectories that stay together, based on trajectory distance time series analysis
 #'
 #' @param A1 represents a single trajectory followed by a person, animal or object.
 #'
 #' @param A2 represents a single trajectory followed by a person, animal or object.
 #'
-#' @param dist Distance of object
+#' @param dist distance time series 
 #'
-#' @param maxtime Is the maximum time
+#' @param maxtime Is the maximum time of point object
 #'
-#' @param mintime Is the minimum time
+#' @param mintime Is the minimum time of point object
 #'
 #' @param datasource Is object class DataSourceInfo
 #'
-#' @param tablename The table name
+#' @param tablename The name of the table database
 #' 
 #' @rdname partner
+#' 
+#' @author Diego Monteiro
 #' 
 #' @examples 
 #' 
 #' partner(A1,A2,110792,2277,0,FALSE)
 #'
-#' @return list with begin time and end time of two  objects partner
+#' @return List with begin time and end time stamps of two  objects partner
 #' 
 #'@export
 setGeneric(
@@ -33,10 +35,6 @@ setGeneric(
     standardGeneric("partner")
   }
 )
-#' Partner
-#' 
-#' DataSourceInfo connection
-#'
 #'@rdname partner
 setMethod(
   f = "partner",
@@ -148,14 +146,9 @@ setMethod(
  
 )
 
-#' Partner
-#' 
-#' Use Postgresql connection
-#' 
 #' @rdname partner
 #' 
 #'@export
-
 setMethod(
   f = "partner",
   signature = c("Track","Track","numeric","numeric","numeric","PostgreSQLConnection","character"),
@@ -281,10 +274,6 @@ setMethod(
     return (allPartner)
   }
  )
-#' Partner
-#' 
-#' Use Logical param in database connection
-#' 
 #' @rdname partner
 #' 
 #'@export
@@ -396,10 +385,6 @@ setMethod(
   }
  
 )
-#' Partner
-#' 
-#' Use Missing database connection
-#' 
 #' @rdname partner
 #' 
 #'@export
@@ -451,10 +436,6 @@ setMethod(
   
   
 )
-#' Partner
-#' 
-#' Use Missing database connection and TrackCollection objects
-#' 
 #' @rdname partner
 #' 
 #'@export
@@ -506,10 +487,6 @@ setMethod(
   
   
 )
-#' Partner
-#' 
-#' Use Missing database connection 
-#' 
 #' @rdname partner
 #'
 #'@export

@@ -1,6 +1,6 @@
 #' Speed filter
 #'
-#' Method to return where speed was higher than the defined parameter
+#' A speed filter that filters out trajectory observations whose speeds are above a user-defined maximum velocity
 #'
 #' @param A1 Track object
 #'

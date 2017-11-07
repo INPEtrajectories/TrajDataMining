@@ -1,6 +1,6 @@
 #' Douglas Peucker
 #'
-#' Method that reduces a trajectory spatially
+#' Douglas-Peucker which reduces trajectories by preserving spatial precisions
 #' 
 #'@import geosphere
 #' 

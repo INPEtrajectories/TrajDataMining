@@ -21,6 +21,12 @@ Polygons
 \description{
 Method for create a spatial cluster
 }
+\examples{
+
+clusterList <- as.numeric(1:42)
+cluster <- createSpatialCluster(A1,clusterList)
+
+}
 \author{
-Diego Monteiro
+Deigo Monteiro
 }

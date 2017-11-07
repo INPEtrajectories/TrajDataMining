@@ -4,7 +4,7 @@
 #'
 #' @param A1 represents a collection of trajectories followed by different persons, animals or objects
 #'
-#' @param dist Distance of object
+#' @param dist distance time series 
 #'
 #' @param speed Speed of object
 #'
@@ -15,6 +15,8 @@
 #' @examples 
 #' 
 #'library(magrittr)
+#'
+#'library(sp)
 #'
 #'library(ggplot2)
 #'ow <-owMeratniaByCollection(tracksCollection,13804.84 ,0.03182201) %>% coordinates()

@@ -3,14 +3,19 @@
 #' Method for create a spatial cluster
 #'
 #' @param A3 Track object
-#' 
-#' @author Diego Monteiro
 #'
 #' @param clusterlist numeric list of cluster positions create spatial objects
-#'
+#
 #' @return Polygons
 #'
 #' @rdname  createSpatialCluster
+#' 
+#' @examples 
+#' 
+#' clusterList <- as.numeric(1:42)
+#' cluster <- createSpatialCluster(A1,clusterList)
+#' 
+#' @author Deigo Monteiro
 #'
 #' @export
 # given a Track and a list of cluster positions create spatial objects

@@ -35,7 +35,6 @@ trajectory distance time series analysis.
 ```{r}
 library(TrajDataMining)
 library(ggplot2)
-library(grid)
 library(sp)
 library(magrittr)
 suppressMessages(library(rgdal))

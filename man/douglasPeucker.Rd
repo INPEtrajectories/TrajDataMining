@@ -19,7 +19,7 @@ douglasPeucker(A1, dist)
 track reduced trajectory spatially
 }
 \description{
-Method that reduces a trajectory spatially
+Douglas-Peucker which reduces trajectories by preserving spatial precisions
 }
 \examples{
 library(ggplot2)

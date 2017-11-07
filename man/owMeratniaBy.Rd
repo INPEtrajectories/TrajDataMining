@@ -13,7 +13,7 @@ owMeratniaBy(A1, dist, speed)
 \arguments{
 \item{A1}{represents a single trajectory followed by a person, animal or object.}
 
-\item{dist}{distance of track}
+\item{dist}{distance time series}
 
 \item{speed}{speed of track}
 }

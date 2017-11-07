@@ -41,36 +41,27 @@ partner(A1, A2, dist, maxtime, mintime, datasource, tablename)
 
 \item{A2}{represents a single trajectory followed by a person, animal or object.}
 
-\item{dist}{Distance of object}
+\item{dist}{distance time series}
 
-\item{maxtime}{Is the maximum time}
+\item{maxtime}{Is the maximum time of point object}
 
-\item{mintime}{Is the minimum time}
+\item{mintime}{Is the minimum time of point object}
 
 \item{datasource}{Is object class DataSourceInfo}
 
-\item{tablename}{The table name}
+\item{tablename}{The name of the table database}
 }
 \value{
-list with begin time and end time of two  objects partner
+List with begin time and end time stamps of two  objects partner
 }
 \description{
-Method to identify if two trajectories are partners
-
-DataSourceInfo connection
-
-Use Postgresql connection
-
-Use Logical param in database connection
-
-Use Missing database connection
-
-Use Missing database connection and TrackCollection objects
-
-Use Missing database connection
+Method to recognize trajectories that stay together, based on trajectory distance time series analysis
 }
 \examples{
 
 partner(A1,A2,110792,2277,0,FALSE)
 
+}
+\author{
+Diego Monteiro
 }

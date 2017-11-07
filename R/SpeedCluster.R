@@ -32,6 +32,7 @@
 #'speed <- speedCluster(A1,avgSpeed,minSpeed,586)
 #'@export
 #'
+
 setGeneric(
   name = "speedCluster",
   def = function(track, avg, minT , sl)
@@ -41,7 +42,7 @@ setGeneric(
   }
 )
 
-#'@rdname speedFilter
+#'@rdname speedCluster
 #'
 # Creates the speeed clusters Track is a given track, avg is the average speed,
 # minT is the minimum period at the speed. And sl is the speed limit
