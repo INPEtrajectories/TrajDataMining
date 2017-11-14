@@ -1,1 +1,1 @@
-globalVariables(c("snl","dbDriver","new"))
+globalVariables(c("dbDriver","new"))
