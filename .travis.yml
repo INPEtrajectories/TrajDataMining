@@ -2,8 +2,14 @@ language: r
 sudo: required
 dist: trusty
 
+r:
+  - 3.0
+
 addons:
   apt:
     packages:
       - libgdal-dev
       - libproj-dev
+env:
+  after_success:
+    - Rscript -e 'covr::codecov()'

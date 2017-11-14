@@ -76,7 +76,7 @@ setMethod(
       if(newavg/newtime < avg && track@connections$speed[newp]<sl){
           if(is.null(cl[newp]) || is.na(cl[newp])){
             cl[newp]<- cln
-            sln <- c(snl,newp)
+            sln <- c(sln,newp)
             sln<- sort(sln)
 
           }
