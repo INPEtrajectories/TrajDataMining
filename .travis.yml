@@ -2,10 +2,6 @@ language: r
 sudo: required
 dist: trusty
 
-env:
-  after_success:
-    - Rscript -e 'covr::codecov()'
-
 addons:
   apt:
     packages:
