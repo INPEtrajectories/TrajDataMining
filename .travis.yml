@@ -1,6 +1,9 @@
 language: r
 sudo: required
 dist: trusty
+before_install:
+  sudo apt-get update
+
 
 addons:
   apt:
