@@ -32,7 +32,6 @@ setMethod(
   {
     sln <- SlowestNeighborhood(track,ini,minT,cl)
     sln <- sort(unlist(sln))
-    print(sln)
     avgspeed = 0
     time = 0
     for(i in 1:length(sln)){

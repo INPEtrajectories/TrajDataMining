@@ -59,7 +59,7 @@ setMethod(
     # Order the speed so it will start with the slowest speed cluster
     speedOrder <- order(track@connections$speed)
     for(n in 1:length(speedOrder)){
-    x<-LimitedNeighborhood(track,speedOrder[n],minT,clusterId , cl, avg , sl)
+    x<-suppressWarnings(LimitedNeighborhood(track,speedOrder[n],minT,clusterId , cl, avg , sl))
       if(is.list(x)){
         clusterId = clusterId + 1
         cl <- x

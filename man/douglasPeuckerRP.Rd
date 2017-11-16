@@ -23,3 +23,11 @@ douglasPeuckerRP(A1, firstp, lastp, dist)
 \description{
 Method that reduces a trajectory spatially with first point and last point
 }
+\examples{
+
+doug <- douglasPeuckerRP(A1,20,200,2000)
+
+}
+\author{
+Diego Monteiro
+}

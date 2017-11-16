@@ -58,8 +58,7 @@ setMethod(
         incr = incr + 1
       }
       else{
-        print("break")
-        break
+       break
       }
 count = count + 1
     }

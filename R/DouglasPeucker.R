@@ -44,6 +44,12 @@ setGeneric(
 #' @param firstp given first point
 #'
 #' @param lastp given last point
+#' 
+#' @author Diego Monteiro
+#' 
+#' @examples 
+#' 
+#' doug <- douglasPeuckerRP(A1,20,200,2000)
 #'
 #' @export
 setGeneric(

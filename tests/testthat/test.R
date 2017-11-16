@@ -20,10 +20,7 @@ test_that ("Test OwMeratnialBy",{
   
 })
 
-test_that ("Test speedCluster", {
-  
-  expect_type(speedCluster(A1,1.408736,0.1,586),"list")
-})
+
 test_that("Test DirectionCluster",{
   expect_type(directionCluster(A1,0,0,359),"list")
   
