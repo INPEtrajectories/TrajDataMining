@@ -11,16 +11,16 @@ speedCluster(track, avg, minT, sl)
 \S4method{speedCluster}{Track,numeric,numeric,numeric}(track, avg, minT, sl)
 }
 \arguments{
-\item{track}{represents a single trajectory followed by a person, animal or object}
+\item{track}{Represents a single trajectory followed by a person, animal or object}
 
-\item{avg}{is the average speed of track}
+\item{avg}{Is the average speed of track}
 
-\item{minT}{is the minimun period at the speed of track}
+\item{minT}{Is the minimun period at the speed of track}
 
-\item{sl}{is the speed limit of track}
+\item{sl}{Is the speed limit of track}
 }
 \value{
-returns regions where speed was lower than the defined parameter
+Returns regions where speed was lower than the defined parameter
 }
 \description{
 Method for check the regions where speed was lower than the defined parameter

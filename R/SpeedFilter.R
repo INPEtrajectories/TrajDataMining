@@ -2,9 +2,9 @@
 #'
 #' A speed filter that filters out trajectory observations whose speeds are above a user-defined maximum velocity
 #'
-#' @param A1 Track object
+#' @param A1 Represents a single trajectory followed by a person, animal or object
 #'
-#' @param speed is the maximum speed parameter
+#' @param speed Is the maximum speed parameter
 #'
 #'@author Diego Monteiro
 #'

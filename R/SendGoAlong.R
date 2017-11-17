@@ -4,11 +4,11 @@
 #'
 #' @import RPostgreSQL
 #'
-#' @param dataframe dataframe list
+#' @param dataframe Dataframe list
 #'
-#' @param dataSourceInfo a object class dataSourceInfo
+#' @param dataSourceInfo A object class dataSourceInfo
 #'
-#' @param tablename name of table 
+#' @param tablename Name of table 
 #'
 #' @return send the partners list for a database
 #'

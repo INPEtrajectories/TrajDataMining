@@ -12,15 +12,15 @@
 #'
 #'@import spacetime
 #'
-#'@param track represents a single trajectory followed by a person, animal or object
+#'@param track Represents a single trajectory followed by a person, animal or object
 #'
-#'@param  avg is the average speed of track
+#'@param  avg Is the average speed of track
 #'
-#'@param minT is the minimun period at the speed of track
+#'@param minT Is the minimun period at the speed of track
 #'
-#'@param sl is the speed limit of track
+#'@param sl Is the speed limit of track
 #'
-#'@return returns regions where speed was lower than the defined parameter
+#'@return Returns regions where speed was lower than the defined parameter
 #'
 #'@author Diego Monteiro
 #'

@@ -1,14 +1,16 @@
 #' Direction Cluster
 #'
-#'That given a Track and maximum change parameter, returns regions where direction changed more than the defined parameter
+#' That given a Track and maximum change parameter, returns regions where direction changed more than the defined parameter
 #'
-#' @param track represents a single trajectory followed by a person, animal or object.
+#' @param track Represents a single trajectory followed by a person, animal or object
 #'
-#' @param minT is the minimun period at the speed
+#' @param minT Is the minimun period at the speed
 #'
-#' @param minD is the minimun direction change
+#' @param minD Is the minimun direction change
 #'
-#' @param tolerance is the maximum change parameter
+#' @param tolerance Is the maximum change parameter
+#' 
+#' @author Diego Monteiro
 #'
 #' @return returns regions where direction changed more than the defined parameter
 #' 

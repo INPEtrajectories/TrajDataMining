@@ -2,7 +2,7 @@
 #'
 #'@param A1 Track object
 #' 
-#'@param index an index list
+#'@param index An index list
 #'
 #'@return track object
 setGeneric(

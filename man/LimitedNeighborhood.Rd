@@ -7,20 +7,23 @@
 LimitedNeighborhood(track, ini, minT, cln, cl, avg, sl)
 }
 \arguments{
-\item{track}{Track obeject}
+\item{track}{Represents a single trajectory followed by a person, animal or object}
 
-\item{ini}{numeric parameter}
+\item{ini}{Order list of track speed}
 
-\item{minT}{is the minimun period at the speed}
+\item{minT}{Is the minimun period at the speed}
 
-\item{cln}{numeric value}
+\item{cln}{Cluster identification}
 
-\item{cl}{numeric list}
+\item{cl}{Empty list}
 
-\item{avg}{average value of speed}
+\item{avg}{Average value of speed}
 
-\item{sl}{is the speed limit}
+\item{sl}{Is the speed limit}
 }
 \description{
 Check the limite of Neighborhood
+}
+\author{
+Diego Monteiro
 }

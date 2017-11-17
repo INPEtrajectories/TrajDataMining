@@ -2,13 +2,15 @@
 #'
 #' Method for check slowest neighborhood
 #'
-#' @param track Track obeject
+#' @param track Represents a single trajectory followed by a person, animal or object
 #'
-#' @param ini numeric parameter
+#' @param ini Order list of track speed
 #'
-#' @param minT is the minimun period at the speed
+#' @param minT Is the minimun period at the speed
 #'
-#' @param cl numeric list
+#' @param cl Empty list
+#' 
+#' @author Diego Monteiro
 #'
 setGeneric(
   name = "SlowestNeighborhood",

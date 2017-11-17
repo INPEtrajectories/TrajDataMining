@@ -16,11 +16,11 @@ sendPartnerPairsToDB(dataframe, dataSourceInfo, tablename)
   dataSourceInfo, tablename)
 }
 \arguments{
-\item{dataframe}{dataframe list}
+\item{dataframe}{Dataframe list}
 
-\item{dataSourceInfo}{a object class dataSourceInfo}
+\item{dataSourceInfo}{A object class dataSourceInfo}
 
-\item{tablename}{name of table}
+\item{tablename}{Name of table}
 }
 \value{
 send the partners list for a database

@@ -2,15 +2,15 @@
 #'
 #' Method to recognize trajectories that stay together, based on trajectory distance time series analysis
 #'
-#' @param A1 represents a single trajectory followed by a person, animal or object.
+#' @param A1 Represents a single trajectory followed by a person, animal or object.
 #'
-#' @param A2 represents a single trajectory followed by a person, animal or object.
+#' @param A2 Represents a single trajectory followed by a person, animal or object.
 #'
-#' @param dist distance time series 
+#' @param dist Ristance that two objects can stay apart 
 #'
-#' @param maxtime Is the maximum time of point object
+#' @param maxtime Maximum time period that two objects can stay apart
 #'
-#' @param mintime Is the minimum time of point object
+#' @param mintime Minimum time period that two objects must stay together
 #'
 #' @param datasource Is object class DataSourceInfo
 #'

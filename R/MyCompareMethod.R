@@ -1,14 +1,16 @@
-#' Sigled diff track
+#' Sigle diff track
 #'
 #' My compare method get distances between 2 Track objects for each point in time where they overlap and create a corresponding line
+#' 
+#'  @import xts
 #'
-#' @param tr1 Track object
+#' @param tr1 represents a single trajectory followed by a person, animal or object.
 #'
-#' @param tr2 Track object
+#' @param tr2 represents a single trajectory followed by a person, animal or object.
+#' 
+#' @author Diego Monteiro
 #'
 #' @return a difftrack object
-#' 
-#' @import xts
 #'
 #' @export
 setClass("singledifftrack",

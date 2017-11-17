@@ -4,13 +4,13 @@
 #'
 #'@import geosphere
 #'
-#'@param A1 represents a single trajectory followed by a person, animal or object.
+#'@param A1 Represents a single trajectory followed by a person, animal or object.
 #'
-#'@param dist distance time series 
+#'@param dist Distance time series 
 #'
-#'@param speed speed of track 
+#'@param speed Speed of track 
 #'
-#'@return reduces trajectories spatiotemporally
+#'@return Reduces trajectories spatiotemporally
 #'
 #'@rdname owMeratniaBy
 #'
@@ -57,7 +57,7 @@ setMethod(
     pointIndexsToKeep[1]
     pointIndexsToKeep[1] = firstPoint
     pointIndexsToKeep[2] = lastPoint
-size <- (length(A1@sp)-1)
+    size <- (length(A1@sp)-1)
     for (e in anchor:size){
       if (stop_point==FALSE){
         for (i in anchor:e){

@@ -12,9 +12,9 @@ owMeratniaByCollection(A1, dist, speed)
   speed)
 }
 \arguments{
-\item{A1}{represents a collection of trajectories followed by different persons, animals or objects}
+\item{A1}{Represents a collection of trajectories followed by different persons, animals or objects}
 
-\item{dist}{distance time series}
+\item{dist}{Distance time series}
 
 \item{speed}{Speed of object}
 }

@@ -4,9 +4,11 @@
 #'
 #' @param A3 Track object
 #'
-#' @param clusterlist numeric list of cluster positions create spatial objects
+#' @param clusterlist Numeric list of cluster positions create spatial objects
+#' 
+#' @author Deigo Monteiro
 #
-#' @return Polygons
+#' @return cluster of polygons
 #'
 #' @rdname  createSpatialCluster
 #' 
@@ -14,8 +16,6 @@
 #' 
 #' clusterList <- as.numeric(1:42)
 #' cluster <- createSpatialCluster(A1,clusterList)
-#' 
-#' @author Deigo Monteiro
 #'
 #' @export
 # given a Track and a list of cluster positions create spatial objects

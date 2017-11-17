@@ -11,14 +11,14 @@ owMeratniaBy(A1, dist, speed)
 \S4method{owMeratniaBy}{Track,numeric,numeric}(A1, dist, speed)
 }
 \arguments{
-\item{A1}{represents a single trajectory followed by a person, animal or object.}
+\item{A1}{Represents a single trajectory followed by a person, animal or object.}
 
-\item{dist}{distance time series}
+\item{dist}{Distance time series}
 
-\item{speed}{speed of track}
+\item{speed}{Speed of track}
 }
 \value{
-reduces trajectories spatiotemporally
+Reduces trajectories spatiotemporally
 }
 \description{
 Method that reduces trajectories spatiotemporally

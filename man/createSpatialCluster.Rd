@@ -13,10 +13,10 @@ createSpatialCluster(A3, clusterlist)
 \arguments{
 \item{A3}{Track object}
 
-\item{clusterlist}{numeric list of cluster positions create spatial objects}
+\item{clusterlist}{Numeric list of cluster positions create spatial objects}
 }
 \value{
-Polygons
+cluster of polygons
 }
 \description{
 Method for create a spatial cluster

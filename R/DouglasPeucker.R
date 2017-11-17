@@ -4,11 +4,13 @@
 #' 
 #'@import geosphere
 #' 
-#'@param A1 represents a single trajectory followed by a person, animal or object.
+#'@param A1 Represents a single trajectory followed by a person, animal or object
 #'
-#'@param dist distance 
+#'@param dist Distance time series 
 #'
-#'@return track reduced trajectory spatially
+#'@author Diego Monteiro
+#'
+#'@return reduces trajectories by preserving spatial precisions
 #' 
 #'@rdname douglasPeucker
 #'
@@ -21,8 +23,6 @@
 #' 
 #'df <- data.frame(x=douglasp@sp@coords[,1],y=douglasp@sp@coords[,2])
 #'ggplot(df,aes(x=df$x,y=df$y))+geom_path(aes(group = 1))
-#'
-#'@author Diego Monteiro
 #'
 #'@export
 setGeneric(

@@ -11,12 +11,12 @@ douglasPeucker(A1, dist)
 \S4method{douglasPeucker}{Track,numeric}(A1, dist)
 }
 \arguments{
-\item{A1}{represents a single trajectory followed by a person, animal or object.}
+\item{A1}{Represents a single trajectory followed by a person, animal or object}
 
-\item{dist}{distance}
+\item{dist}{Distance time series}
 }
 \value{
-track reduced trajectory spatially
+reduces trajectories by preserving spatial precisions
 }
 \description{
 Douglas-Peucker which reduces trajectories by preserving spatial precisions

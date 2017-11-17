@@ -7,14 +7,17 @@
 SlowestNeighborhood(track, ini, minT, cl)
 }
 \arguments{
-\item{track}{Track obeject}
+\item{track}{Represents a single trajectory followed by a person, animal or object}
 
-\item{ini}{numeric parameter}
+\item{ini}{Order list of track speed}
 
-\item{minT}{is the minimun period at the speed}
+\item{minT}{Is the minimun period at the speed}
 
-\item{cl}{numeric list}
+\item{cl}{Empty list}
 }
 \description{
 Method for check slowest neighborhood
+}
+\author{
+Diego Monteiro
 }

@@ -1,10 +1,10 @@
 #' Right size verifier
 #' 
-#' @param diffTracks difftrack
+#' @param diffTracks Difftrack
 #' 
-#' @param begintime begin time 
+#' @param begintime Begin time 
 #' 
-#' @param endtime end time
+#' @param endtime End time
 #' 
 #' @param sizeMultiplier number will multiplier the diff
 #' 

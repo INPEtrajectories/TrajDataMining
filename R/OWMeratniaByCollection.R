@@ -2,15 +2,15 @@
 #'
 #' Method that reduces a set of trajectories spatiotemporally
 #'
-#' @param A1 represents a collection of trajectories followed by different persons, animals or objects
+#' @param A1 Represents a collection of trajectories followed by different persons, animals or objects
 #'
-#' @param dist distance time series 
+#' @param dist Distance time series 
 #'
 #' @param speed Speed of object
 #'
 #' @return Trajectory spatiotemporally reduced
 #' 
-#'@author Diego Monteiro
+#' @author Diego Monteiro
 #' 
 #' @examples 
 #' 

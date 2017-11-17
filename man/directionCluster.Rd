@@ -12,13 +12,13 @@ directionCluster(track, minD, minT, tolerance)
   tolerance)
 }
 \arguments{
-\item{track}{represents a single trajectory followed by a person, animal or object.}
+\item{track}{Represents a single trajectory followed by a person, animal or object}
 
-\item{minD}{is the minimun direction change}
+\item{minD}{Is the minimun direction change}
 
-\item{minT}{is the minimun period at the speed}
+\item{minT}{Is the minimun period at the speed}
 
-\item{tolerance}{is the maximum change parameter}
+\item{tolerance}{Is the maximum change parameter}
 }
 \value{
 returns regions where direction changed more than the defined parameter
@@ -30,4 +30,7 @@ That given a Track and maximum change parameter, returns regions where direction
 
 directionCluster(A1,0,0,359)
 
+}
+\author{
+Diego Monteiro
 }

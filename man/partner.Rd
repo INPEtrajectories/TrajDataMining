@@ -37,15 +37,15 @@ partner(A1, A2, dist, maxtime, mintime, datasource, tablename)
   A2, dist, maxtime, mintime, datasource, tablename)
 }
 \arguments{
-\item{A1}{represents a single trajectory followed by a person, animal or object.}
+\item{A1}{Represents a single trajectory followed by a person, animal or object.}
 
-\item{A2}{represents a single trajectory followed by a person, animal or object.}
+\item{A2}{Represents a single trajectory followed by a person, animal or object.}
 
-\item{dist}{distance time series}
+\item{dist}{Ristance that two objects can stay apart}
 
-\item{maxtime}{Is the maximum time of point object}
+\item{maxtime}{Maximum time period that two objects can stay apart}
 
-\item{mintime}{Is the minimum time of point object}
+\item{mintime}{Minimum time period that two objects must stay together}
 
 \item{datasource}{Is object class DataSourceInfo}
 

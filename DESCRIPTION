@@ -11,7 +11,7 @@ Description: The TrajDataMining contains a set of methods for trajectory data pr
 License: MIT + file LICENSE
 LazyData: TRUE
 Encoding: UTF-8
-Depends: R (>= 3.0.0)
+Depends: R (>= 3.3.3)
 Imports: sp,
     trajectories,
     rgdal,

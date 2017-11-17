@@ -2,19 +2,21 @@
 #'
 #' Check the limite of Neighborhood
 #'
-#' @param track Track obeject
+#' @param track Represents a single trajectory followed by a person, animal or object
 #'
-#' @param ini numeric parameter
+#' @param ini Order list of track speed
 #'
-#' @param minT is the minimun period at the speed
+#' @param minT Is the minimun period at the speed
 #'
-#'@param cln numeric value
+#'@param cln Cluster identification
 #'
-#'@param cl numeric list
+#'@param cl Empty list
 #'
-#'@param avg average value of speed
+#'@param avg Average value of speed
 #'
-#'@param sl is the speed limit
+#'@param sl Is the speed limit
+#'
+#'@author Diego Monteiro
 #'
 setGeneric(
     name = "LimitedNeighborhood",

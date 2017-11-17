@@ -11,9 +11,9 @@ speedFilter(A1, speed)
 \S4method{speedFilter}{Track,numeric}(A1, speed)
 }
 \arguments{
-\item{A1}{Track object}
+\item{A1}{Represents a single trajectory followed by a person, animal or object}
 
-\item{speed}{is the maximum speed parameter}
+\item{speed}{Is the maximum speed parameter}
 }
 \description{
 A speed filter that filters out trajectory observations whose speeds are above a user-defined maximum velocity

@@ -3,15 +3,21 @@
 \docType{class}
 \name{singledifftrack-class}
 \alias{singledifftrack-class}
-\title{Sigled diff track}
+\title{Sigle diff track}
 \arguments{
-\item{tr1}{Track object}
+\item{tr1}{represents a single trajectory followed by a person, animal or object.}
 
-\item{tr2}{Track object}
+\item{tr2}{represents a single trajectory followed by a person, animal or object.}
 }
 \value{
 a difftrack object
 }
 \description{
 My compare method get distances between 2 Track objects for each point in time where they overlap and create a corresponding line
+}
+\details{
+@import xts
+}
+\author{
+Diego Monteiro
 }

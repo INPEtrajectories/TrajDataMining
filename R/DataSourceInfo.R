@@ -4,27 +4,27 @@
 #' 
 #'@import methods
 #' 
-#'@slot user user of database
+#'@slot user User of database
 #'
 #'@slot title Title of database
 #'
-#'@slot accessDriver the database access driver
+#'@slot accessDriver The database access driver
 #' 
-#'@slot host host of the database (e.g. local host)
+#'@slot host Host of the database (e.g. localhost)
 #'
-#'@slot port port the database (e.g. 5432)
+#'@slot port Port the database (e.g. 5432)
 #'
-#'@slot timeout timeout time of connection
+#'@slot timeout Timeout time of connection
 #' 
-#'@slot password password of database
+#'@slot password Password of database
 #' 
-#'@slot db database name
+#'@slot db Database name
 #'
-#'@slot encoding encoding of database (e.g.CP1252 )
+#'@slot encoding Encoding of database (e.g.CP1252 )
 #'
-#'@slot dbtype the type of the database (e.g. POSTGIS)
+#'@slot dbtype The type of the database (e.g. POSTGIS)
 #'
-#'@slot path path of the database
+#'@slot path Path of the database
 #'
 DataSourceInfo <- setClass(
   # Set the name for the class

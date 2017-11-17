@@ -7,11 +7,11 @@
 RightSize(diffTracks, begintime, endtime, sizeMultiplier)
 }
 \arguments{
-\item{diffTracks}{difftrack}
+\item{diffTracks}{Difftrack}
 
-\item{begintime}{begin time}
+\item{begintime}{Begin time}
 
-\item{endtime}{end time}
+\item{endtime}{End time}
 
 \item{sizeMultiplier}{number will multiplier the diff}
 }
