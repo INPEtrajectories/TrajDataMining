@@ -16,7 +16,7 @@
 #' 
 #' @examples 
 #' 
-#'directionCluster(A1,0,0,359)
+#'cluster<-createSpatialCluster(A1,directionCluster(A1,5,10,2))
 #'
 #' @export
 setGeneric(
