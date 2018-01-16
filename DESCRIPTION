@@ -5,6 +5,7 @@ Version: 0.1.1
 Date: 2015-11-22
 Authors@R: c(person("Diego","Monteiro",role=c("aut","cre"),email="dvm1607@gmail.com"),
   person("Karine", "Reis", role = "ctb",email="karine.ferreira@inpe.br"),
+  person("Rafael", "Santos", role = "ctb", email="rafael.santos@inpe.br"),
   person("Carlos", "Alberto", role = "ctb",email="carlos.noronha@inpe.br"),
   person("Felipe", "Carvalho", role = "ctb",email="lipecaso@gmail.com"))
 Description: The TrajDataMining contains a set of methods for trajectory data preparation, such as filtering, compressing and clustering, and for trajectory pattern discovery.
