@@ -8,7 +8,7 @@
 \describe{
   \item{id}{id each point of trajectory}
    \item{x}{latitude}
-  \item{y}{longitude}]
+  \item{y}{longitude}
   \item{time}{time stamps of the track points}
   \item{endtime}{end time stamps of the track points}
   \item{timeindex}{id of time stamps}
